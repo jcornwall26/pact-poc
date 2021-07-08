@@ -1,0 +1,86 @@
+{
+  "consumer": {
+    "name": "ScoreCard-Module"
+  },
+  "provider": {
+    "name": "ScoreCard-Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for all repositories",
+      "providerState": "repositories are populated",
+      "request": {
+        "method": "get",
+        "path": "/v1/repositories/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "data": [
+            {
+              "type": "repositories",
+              "id": "kiwi-server-cne",
+              "attributes": {
+                "template_type": "kiwi-server",
+                "template_version": "1.1.0",
+                "runtime": "python.x"
+              }
+            },
+            {
+              "type": "repositories",
+              "id": "kiwi-module-pdp",
+              "attributes": {
+                "template_type": "kiwi-module",
+                "template_version": "1.0.5",
+                "runtime": null
+              }
+            },
+            {
+              "type": "repositories",
+              "id": "kiwi-module-stores",
+              "attributes": {
+                "template_type": "kiwi-module",
+                "template_version": "2.0.1",
+                "runtime": null
+              }
+            },
+            {
+              "type": "repositories",
+              "id": "kiwi-module-cdp",
+              "attributes": {
+                "template_type": "kiwi-module",
+                "template_version": "2.0.1",
+                "runtime": null
+              }
+            },
+            {
+              "type": "repositories",
+              "id": "ecom-web-app",
+              "attributes": {
+                "template_type": "nextjs-lambda",
+                "template_version": "2.0.1",
+                "runtime": "nodejs12.x"
+              }
+            },
+            {
+              "type": "repositories",
+              "id": "ecom-checkout-client",
+              "attributes": {
+                "template_type": "nextjs-lambda",
+                "template_version": "1.0.0",
+                "runtime": "nodejs12.x"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
